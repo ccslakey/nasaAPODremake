@@ -1,4 +1,26 @@
-
+.body {
+  margin:50px;
+  /*text-align: center;*/
+}
 .App-logo {
   width: 100%
+}
+
+
+a.disabled {
+   pointer-events: none;
+   cursor: default;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 1300px) {
+
+  .App-logo {
+    width: 100%;
+    /*max-height: 600px;*/
+  }
 }
