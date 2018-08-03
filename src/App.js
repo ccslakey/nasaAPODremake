@@ -62,7 +62,7 @@ class App extends Component {
     if (this.state.data.hdurl) {
       return <img src={this.state.data.hdurl} className="App-logo" alt="NASA APOD" />
     } else {
-      return <iframe src={this.state.data.url} height="600" className="App-logo" frameborder="0" allowfullscreen ></iframe>
+      return <iframe src={this.state.data.url} height="600" className="App-logo" frameBorder="0" allowFullScreen ></iframe>
     }
   }
 
@@ -77,12 +77,12 @@ class App extends Component {
               {this.mediaObj()}
             </div>
 
-            <a onClick={this.decrementDate.bind(this)} className="left carousel-control" href="#">
-              <span className="glyphicon glyphicon-chevron-left"></span>
+            <a onClick={this.decrementDate.bind(this)} className="carousel-control-prev" href="#">
+              <span className="carousel-control-prev-icon"></span>
               <span className="sr-only">Previous</span>
             </a>
-            <a onClick={this.incrementDate.bind(this)} className={"right carousel-control " + (this.dateIsToday() ? 'disabled' : 'enabled')} href="#">
-              <span className="glyphicon glyphicon-chevron-right"></span>
+            <a onClick={this.incrementDate.bind(this)} className={"carousel-control-next " + (this.dateIsToday() ? 'disabled' : 'enabled')} href="#">
+              <span className="carousel-control-next-icon"></span>
               <span className="sr-only">Next</span>
             </a>
           </div>
